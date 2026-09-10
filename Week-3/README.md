@@ -1,0 +1,3 @@
+### REFLECTIONS ###
+
+I changed a lot of things in my 3rd week of this project. I put the nav list in the body to make more modern looking, adjusted the css file by modifying the elements and adding some properties that can help with how the website is presented and how it adapts to any screen changes. and off course contrasting colors that helps with user readability and slight eye protection with the dark background. 

@@ -1,0 +1,48 @@
+
+body {
+    margin: 0;
+    color: #91fa67;
+    background:rgb(33, 32, 32) ;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
+
+.site-header {
+    background: rgb(60, 255, 86);
+    color: rgb(231, 26, 26);
+    padding: 24px;
+}
+
+.site-header h1 { 
+    margin: 0 0 12px;
+}
+
+.nav-list{
+    display: flex;
+    gap: 12px;
+}
+
+.nav-list a {
+    color:rgb(169, 169, 169);
+    font-weight:bold;
+}
+
+.page {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px;
+}
+
+.intro, 
+.resources {
+    background: black;
+    border: 1px solid #acf88e;
+    border-radius: 8px;
+    margin-bottom: 16px;
+    padding: 16px;
+}
+
+.footer{
+    color: white;
+    font-weight: lighter;
+}

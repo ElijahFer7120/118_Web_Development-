@@ -1,0 +1,68 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #e4d7d7;
+  background: #040c02;
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: #f30707;
+}
+
+.Rider {
+  background: #06e21c;
+  color: rgb(254, 4, 4);
+  padding: 32px 24px;
+}
+
+.Rider h1,
+.Rider p {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 16px 12px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  min-height: 160px;
+  background: rgb(0, 0, 0);
+  border: 2px solid #fdfdfd;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.sidebar {
+  background: rgb(11, 0, 0);
+  border: 2px solid #d5ded8;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.sidebar h2 {
+  flex: 1.5;
+}
+
+@media (max-width: 800px) {
+  .card-grid {
+    flex-direction: column;
+  }
+}
