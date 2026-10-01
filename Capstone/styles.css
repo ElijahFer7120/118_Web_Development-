@@ -1,0 +1,86 @@
+:root {
+  --primary-color: #e4d7d7;
+  --background-color: #040c02;
+  --link-color: #f30707;
+  --rider-background: #06e21c;
+  --rider-color: rgb(24, 24, 24);
+  --card-background: rgb(0, 0, 0);
+  --card-border: #fdfdfd;
+  --sidebar-background: rgb(11, 0, 0);
+  --sidebar-border: #d5ded8;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--primary-color);
+  background: var(--background-color);
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  color: var(--link-color);
+}
+
+.Rider {
+  background: var(--rider-background);
+  color: var(--rider-color);
+  padding: 32px 24px;
+  background-image: url('Kamen_Rider_Series_Official_Logo_2020.png');
+  background-size: contain;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 32px 24px;
+}
+
+.Rider h1,
+.Rider p {
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page {
+  max-width: 1400px;
+  margin: 24px auto;
+  padding: 16px 12px;
+}
+
+.card-grid {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.card {
+  min-height: 160px;
+  background: var(--card-background);
+  border: 2px solid var(--card-border);
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+}
+
+.sidebar {
+  background: var(--sidebar-background);
+  border: 2px solid var(--sidebar-border);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.sidebar h2 {
+  flex: 1.5;
+}
+
+@media (max-width: 950px) {
+  .card-grid {
+    flex-direction: column;
+  }
+}
