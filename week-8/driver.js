@@ -6,7 +6,11 @@ function startdelay() {
 
     setTimeout(() => {
         status.textContent = "couldn't calculate now..";
-    }, 2000);
+    }, 5000);
+}
+function resetStatus() {
+    status.textContent = "";
 }
 button.addEventListener("click", startdelay);
+button.addEventListener("dblclick", resetStatus);
 
