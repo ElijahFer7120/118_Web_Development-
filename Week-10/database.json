@@ -1,0 +1,38 @@
+[
+    {
+        "Rider": "Ichigo",
+        "Era": "Showa",
+        "Availability": "Streaming on Youtube with all full episodes",
+        "Use": "Entertainment"
+    },
+    {
+        "Rider": "Kuuga",
+        "Era": "Heisei",
+        "Availability": "Streaming on Youtube with all full episodes for a limited time",
+        "Use": "Entertainment"
+    }, 
+    {
+        "Rider": "Build",
+        "Era": "Heisei",
+        "Availability": "First two episodes are available for free on Youtube But the rest aren't available Legally",
+        "Use": "Entertainment"
+    },
+    {
+        "Rider": "Ex-Aid",
+        "Era": "Heisei",
+        "Availability": "Streaming on Youtube for a limited time",
+        "Use": "Entertainment"
+    },
+    { 
+        "Rider": "Geats",
+        "Era": "Reiwa",
+        "Availability": "Streaming on Youtube with all full episodes",
+        "Use": "Entertainment"
+    },
+    {
+        "Rider": "Zero-One",
+        "Era": "Reiwa",
+        "Availability": "Streaming on Youtube with all full episodes",
+        "Use": "Entertainment"
+    }
+]

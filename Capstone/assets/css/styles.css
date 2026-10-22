@@ -30,12 +30,11 @@ a {
 .Rider {
   background: var(--rider-background);
   color: var(--rider-color);
-  padding: 32px 24px;
-  background-image: url('Kamen_Rider_Series_Official_Logo_2020.png');
+  padding: 6px 12px;
+  background-image: url('img/Kamen_Rider_Series_Official_Logo_2020.png');
   background-size: contain;
   background-position: right;
   background-repeat: no-repeat;
-  padding: 32px 24px;
 }
 
 .Rider h1,
