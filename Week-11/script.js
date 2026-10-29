@@ -32,3 +32,16 @@ function clearCounts() {
     likescount();
 }
 
+function saveCounts() {
+    localStorage.setItem("likes", likes);
+    localStorage.setItem("dislikes", dislikes);
+}
+function loadCounts() {
+    likes = parseInt(localStorage.getItem("likes")) || 0;
+    dislikes = parseInt(localStorage.getItem("dislikes")) || 0;
+    likescount();
+}
+
+loadCounts();
+window.addEventListener("beforeunload", saveCounts);
+
