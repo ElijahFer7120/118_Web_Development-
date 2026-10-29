@@ -13,7 +13,6 @@ let dislikes = 0;
 
 function likescount() {
     likesDisplay.textContent = ` Likes: ${likes} | Dislikes: ${dislikes} `;
-    dislikeDisplay.textContent = ` Dislikes: ${dislikes} `;
     saveCounts();
 }
 
@@ -47,6 +46,6 @@ function loadCounts() {
 }
 
 loadCounts();
-window.addEventListener(saveCounts);
+window.addEventListener("beforeunload", saveCounts);
 
 

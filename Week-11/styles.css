@@ -23,12 +23,8 @@ button:hover {
     background-color: #0056b3;
 }
 
-#likesdisplay, #dislikesdisplay, #ratiodisplay {
-    margin-top: 20px;
-    font-size: 18px;
-}
 
-#dislikeDisplay, #likeDisplay {
+#dislikesdisplay, #likesdisplay {
     margin-top: 10px;
     font-size: 18px;
 }   
