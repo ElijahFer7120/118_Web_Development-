@@ -3,9 +3,6 @@ const dislikeBtn = document.getElementById("dislikebtn");
 const likesDisplay = document.getElementById("likesdisplay");
 const dislikeDisplay = document.getElementById("dislikesdisplay");
 const clrBtn = document.getElementById("clrbtn");
-const themeSelect = document.getElementById("theme");
-
-themeSelect.addEventListener("change", changeTheme);
 
 likeBtn.addEventListener("click", addlikes);
 dislikeBtn.addEventListener("click", adddislikes);
@@ -23,17 +20,20 @@ function likescount() {
 function addlikes() {
     likes += 1
     likescount();
+    saveCounts();
 }
 
 function adddislikes() {
     dislikes += 1;
     likescount();
+    saveCounts();
 }
 
 function clearCounts() {
     likes = 0;
     dislikes = 0;
     likescount();
+    saveCounts();
 }
 
 function saveCounts() {
@@ -47,6 +47,6 @@ function loadCounts() {
 }
 
 loadCounts();
-window.addEventListener("beforeunload", saveCounts);
+window.addEventListener(saveCounts);
 
 
