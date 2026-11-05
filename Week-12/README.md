@@ -1,0 +1,4 @@
+### REFLECTION ###
+
+
+there were a couple things that I changed a bit since tuesday lab, I changed the image's size and resolution to be optimized for better performance for my potential website and as well as adding a little fade in animation too. I also added in a debounce feature to avoid unnecessary junk on my website and gave it a timer and limit for better optimization. When I was adding my background image, it won't adapt to different screen sizes, nor it would be positioned right in the background. My solution was to ask on how to fix this problem and any suggestions it can give which worked but i have to be aware that not everything I use should be handled by Ai.

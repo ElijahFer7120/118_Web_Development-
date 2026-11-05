@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    background-color: #38e5ee;
+    position: relative;
+}
+/* switched my background code to the new one with fade-in effect */
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-image: url('kamen_rider_50th_anniversary_4k_wallpaper_by_afdryan_depy94v-fullview (1).jpg');
+    min-height: 100vh;
+    min-height: 100dvh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    opacity: 0;
+    animation: bg-fade 1.2s ease-in-out forwards;
+}
+/* add a little animation for the background fade-in effect */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+#search-results {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+#search-results li {
+    padding: 5px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #00CCFF;
+    background-image: linear-gradient(to bottom, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    color: #ffffff;
+    position: relative;
+    z-index: 1;
+}
+
+.status {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fbfafa;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+#stand-by {
+    margin-top: 10px;
+    font-style: italic;
+    color: #666;
+    background-color: #f9f9f9;
+    padding: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+@media (max-width: 600px) {
+    body::before { background-image: url('kamen_rider_50th_anniversary_4k_wallpaper_by_afdryan_depy94v-fullview (1).jpg'); }
+}
+
+@keyframes bg-fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+

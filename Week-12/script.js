@@ -1,0 +1,53 @@
+const riderSearchInput = document.getElementById('rider-search');
+const standByMessage = document.getElementById('stand-by');
+const searchResults = document.getElementById('search-results');
+const status = document.getElementById('status');
+
+const ridersource = [
+    "Ichigo",
+    "Geats",
+    "Zero-One",
+    "Build",
+    "Ex-Aid",
+    "Kabuto",
+    "Fourze",
+    "Den-O",
+    "Faiz"
+];
+// <-- added in two new riders to the list and added a debounce timer for filtering -->
+let filteredRiders = [];
+let debouncetimer = null;
+
+
+function renderRiders(matchedRiders) {
+    searchResults.innerHTML = '';
+
+    for (const rider of matchedRiders) {
+        const li = document.createElement('li');
+        li.textContent = rider;
+        searchResults.appendChild(li);
+    }
+}
+
+function filterRiders() {
+    if (typeof filterRiders.filterRunCount === 'undefined') {
+        filterRiders.filterRunCount = 0;
+    }
+    filterRiders.filterRunCount += 1;
+    const searchTerm = riderSearchInput.value.toLowerCase();
+    const matchedRiders = ridersource.filter(function (rider) {
+        return rider.toLowerCase().includes(searchTerm);
+    });
+    standByMessage.textContent = `Filter run count: ${filterRiders.filterRunCount}`;
+    if (matchedRiders.length === 0) {
+        standByMessage.textContent += ' No riders found.';
+    }
+    renderRiders(matchedRiders);
+}
+
+riderSearchInput.addEventListener('input', function() {
+    clearTimeout(debouncetimer);
+    debouncetimer = setTimeout(filterRiders, 300);
+});
+
+renderRiders(ridersource);
