@@ -1,7 +1,8 @@
 const riderSearchInput = document.getElementById('rider-search');
 const standByMessage = document.getElementById('stand-by');
 const searchResults = document.getElementById('search-results');
-const status = document.getElementById('status');
+// const status = document.getElementById('status');
+// redundant status element removed
 
 const ridersource = [
     "Ichigo",
