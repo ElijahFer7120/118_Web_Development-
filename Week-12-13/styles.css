@@ -45,6 +45,8 @@ body::before {
 
 .container {
     max-width: 600px;
+    width: 90%;
+    /* added some responsive styling to the container. that way, it adjusts nicely on smaller screens. */
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;

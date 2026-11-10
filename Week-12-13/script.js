@@ -36,12 +36,12 @@ function filterRiders() {
     }
     filterRiders.filterRunCount += 1;
     // const searchTerm = riderSearchInput.value.toLowerCase();
-    // removed string to fix any potential input recognition issues
+    // removed string to fix any potential input recognition issues. plus, it was another unnecessary step since normalization handles it.
     const matchedRiders = ridersource.filter(isMatch);
     standByMessage.textContent = `Filter run count: ${filterRiders.filterRunCount}`;
     if (matchedRiders.length === 0) {
         // standByMessage.innerHTML += ' No riders found.';
-        // innerhtml replaced with textcontent to avoid any HTML injection issues
+        // innerhtml replaced with textcontent to avoid any HTML injection issues. Don't want any malicious code to be executed.
         standByMessage.textContent += ' No riders found.';
     }
     renderRiders(matchedRiders);
@@ -55,7 +55,7 @@ function isMatch(rider) {
     const searchTerm = normalize(riderSearchInput.value);
     return normalize(rider).includes(searchTerm);
 }
-// added a function to make the search case-insensitive and ignore spaces and hyphens
+// added a function to make the search case-insensitive and ignore spaces and hyphens. this ensures that user input matches riders correctly regardless of formatting.
 
 riderSearchInput.addEventListener('input', function() {
     clearTimeout(debouncetimer);
