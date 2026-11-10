@@ -55,6 +55,7 @@ function isMatch(rider) {
     const searchTerm = normalize(riderSearchInput.value);
     return normalize(rider).includes(searchTerm);
 }
+// added a function to make the search case-insensitive and ignore spaces and hyphens
 
 riderSearchInput.addEventListener('input', function() {
     clearTimeout(debouncetimer);
