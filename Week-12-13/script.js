@@ -55,6 +55,7 @@ function isMatch(rider) {
     const searchTerm = normalize(riderSearchInput.value);
     return normalize(rider).includes(searchTerm);
 }
+
 riderSearchInput.addEventListener('input', function() {
     clearTimeout(debouncetimer);
     debouncetimer = setTimeout(filterRiders, 300);
