@@ -15,3 +15,4 @@ thinking about helped me understand how certain websites and apps handle junk da
 
 ### REFLECTION 13 ###
 
+"it's honestly like applying the concept of murphy's law into making the program. when you thought you made the most secured and robust function into your website, only for it to show a couple of imperfections and some *vulnerabilities (like my spelling) that can be easily mess all of that hard work you made."
