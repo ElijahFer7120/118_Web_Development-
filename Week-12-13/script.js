@@ -35,17 +35,26 @@ function filterRiders() {
         filterRiders.filterRunCount = 0;
     }
     filterRiders.filterRunCount += 1;
-    const searchTerm = riderSearchInput.value.toLowerCase();
-    const matchedRiders = ridersource.filter(function (rider) {
-        return rider.toLowerCase().includes(searchTerm);
-    });
+    // const searchTerm = riderSearchInput.value.toLowerCase();
+    // removed string to fix any potential input recognition issues
+    const matchedRiders = ridersource.filter(isMatch);
     standByMessage.textContent = `Filter run count: ${filterRiders.filterRunCount}`;
     if (matchedRiders.length === 0) {
+        // standByMessage.innerHTML += ' No riders found.';
+        // innerhtml replaced with textcontent to avoid any HTML injection issues
         standByMessage.textContent += ' No riders found.';
     }
     renderRiders(matchedRiders);
 }
 
+function normalize(text) {
+    return text.toLowerCase().replace(/[-\s]/g, '');
+}
+
+function isMatch(rider) {
+    const searchTerm = normalize(riderSearchInput.value);
+    return normalize(rider).includes(searchTerm);
+}
 riderSearchInput.addEventListener('input', function() {
     clearTimeout(debouncetimer);
     debouncetimer = setTimeout(filterRiders, 300);
