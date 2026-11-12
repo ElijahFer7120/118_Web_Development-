@@ -2,27 +2,12 @@
   --primary-color: #e4d7d7;
   --background-color: #040c02;
   --link-color: #f30707;
-  --rider-background: #06e21c;
+  --rider-background: #06f41e;
   --rider-color: #000000;
   --card-background: rgb(0, 0, 0);
   --card-border: #fdfdfd;
   --sidebar-background: rgb(11, 0, 0);
   --sidebar-border: #d5ded8;
-}
-
-body {
-  margin: 0;
-  color: var(--primary-color);
-  background: var(--background-color);
-
-  background-image: url("img/wp5222017.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 100vh;
-
-  font-family: 'Orbitron', sans-serif;
-  line-height: 1.6;
 }
 
 * {
@@ -35,6 +20,12 @@ body {
   background: var(--background-color);
   font-family: 'Orbitron', sans-serif;
   line-height: 1.6;
+  background-image: url("img/wp5222017.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 95vh;
+  background-attachment: fixed;
 }
 
 a {
@@ -45,9 +36,9 @@ a {
   background: var(--rider-background);
   color: var(--rider-color);
   padding: 6px 12px;
-  background-image: url('img/Kamen_Rider_Series_Official_Logo_2020.png');
+  background-image: url('img/download.png');
   background-size: contain;
-  background-position: right;
+  background-position: 100% 50%;
   background-repeat: no-repeat;
 }
 
