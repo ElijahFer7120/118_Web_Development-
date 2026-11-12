@@ -10,6 +10,20 @@
   --sidebar-border: #d5ded8;
 }
 
+body {
+  margin: 0;
+  color: var(--primary-color);
+  background: var(--background-color);
+
+  background-image: url("img/wp5222017.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+
+  font-family: 'Orbitron', sans-serif;
+  line-height: 1.6;
+}
 
 * {
   box-sizing: border-box;
